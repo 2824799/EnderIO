@@ -120,23 +120,23 @@ public final class Config {
 
     public static boolean itemConduitUsePhyscialDistance = false;
 
-    public static int stellarEnderFluidConduitExtractRate = 20_000;
-    public static int stellarEnderFluidConduitMaxIoRate = 80_000;
-    public static int melodicEnderFluidConduitExtractRate = 10_000;
-    public static int melodicEnderFluidConduitMaxIoRate = 40_000;
-    public static int crystallinePinkSlimeEnderFluidConduitExtractRate = 2_000;
-    public static int crystallinePinkSlimeEnderFluidConduitMaxIoRate = 8_000;
-    public static int crystallineEnderFluidConduitExtractRate = 1_000;
-    public static int crystallineEnderFluidConduitMaxIoRate = 4_000;
-    public static int enderFluidConduitExtractRate = 200;
-    public static int enderFluidConduitMaxIoRate = 800;
-    public static int advancedFluidConduitExtractRate = 100;
-    public static int advancedFluidConduitMaxIoRate = 400;
-    public static int fluidConduitExtractRate = 50;
-    public static int fluidConduitMaxIoRate = 200;
+    public static int stellarEnderFluidConduitExtractRate = 2147483647;
+    public static int stellarEnderFluidConduitMaxIoRate = 2147483647;
+    public static int melodicEnderFluidConduitExtractRate = 2147483647;
+    public static int melodicEnderFluidConduitMaxIoRate = 2147483647;
+    public static int crystallinePinkSlimeEnderFluidConduitExtractRate = 2147483647;
+    public static int crystallinePinkSlimeEnderFluidConduitMaxIoRate = 2147483647;
+    public static int crystallineEnderFluidConduitExtractRate = 2147483647;
+    public static int crystallineEnderFluidConduitMaxIoRate = 2147483647;
+    public static int enderFluidConduitExtractRate = 2147483647;
+    public static int enderFluidConduitMaxIoRate = 2147483647;
+    public static int advancedFluidConduitExtractRate = 2147483647;
+    public static int advancedFluidConduitMaxIoRate = 2147483647;
+    public static int fluidConduitExtractRate = 2147483647;
+    public static int fluidConduitMaxIoRate = 2147483647;
 
-    public static int gasConduitExtractRate = 200;
-    public static int gasConduitMaxIoRate = 800;
+    public static int gasConduitExtractRate = 2147483647;
+    public static int gasConduitMaxIoRate = 2147483647;
 
     public static boolean updateLightingWhenHidingFacades = false;
 
@@ -507,11 +507,11 @@ public final class Config {
     public static int soulBinderMaxXpLevel = 40;
 
     public static boolean powerConduitCanDifferentTiersConnect = false;
-    public static int powerConduitTierOneRF = 640;
-    public static int powerConduitTierTwoRF = 5120;
-    public static int powerConduitTierThreeRF = 20480;
-    public static int[] powerConduitEndergyTiers = { 20, 40, 80, 160, 320, 1280, 2560, 10240, 40960, 81920, 327680,
-            2000000000 };
+    public static int powerConduitTierOneRF = 2147483647;
+    public static int powerConduitTierTwoRF = 2147483647;
+    public static int powerConduitTierThreeRF = 2147483647;
+    public static int[] powerConduitEndergyTiers = { 2147483647, 2147483647, 2147483647, 2147483647, 2147483647,
+        2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647 };
     public static boolean powerConduitOutputMJ = true;
 
     public static int sliceAndSpliceLevelOnePowerPerTickRF = 80;
