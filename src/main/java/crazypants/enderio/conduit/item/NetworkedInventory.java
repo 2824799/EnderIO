@@ -109,17 +109,10 @@ public class NetworkedInventory {
         return con.getOutputPriority(conDir);
     }
 
-    public void onTick() {
-        if (tickDeficit > 0 || !canExtract() || !con.isExtractionRedstoneConditionMet(conDir)) {
-            // do nothing
-        } else {
-            transferItems();
-        }
-
-        tickDeficit--;
-        if (tickDeficit < -1) {
-            // Sleep for a second before checking again.
-            tickDeficit = 20;
+    public void onTick() { // /////////////////////////////////////////////////////////////////////////////////////////////
+        int i = 0;
+        while (canExtract() && con.isExtractionRedstoneConditionMet(conDir) && i <= 128 && transferItems()) {
+            i++;
         }
     }
 
@@ -144,7 +137,6 @@ public class NetworkedInventory {
     }
 
     private boolean transferItems() {
-
         if (recheckInv) {
             updateInventory();
         }
@@ -236,7 +228,6 @@ public class NetworkedInventory {
             }
         }
         con.itemsExtracted(numInserted, slot);
-        tickDeficit = Math.round(numInserted * con.getTickTimePerItem(conDir));
     }
 
     int insertIntoTargets(ItemStack toExtract) {
